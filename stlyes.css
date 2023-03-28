@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* background: darkgray; */
+    font-family: 'Mitr', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+body {
+    /* กำหนดความกว้างไม่ให้เกินไปมากกว่านี้*/
+    /* background: lightblue; */
+    width: 100%;
+    margin: 100pxpx;
+    background-color: rgb(227, 227, 227);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+
+    /* ปรับตามขนาดหน้าจอไปเรื่อยๆ */
+}
+
+.container {
+    /*margin ของ top and bottom*/
+    width: 60%;
+    margin: 250px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.layoutleft {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+.laypic {
+    display: inline-flex;
+    flex-flow: column wrap;
+    width: 400px;
+    margin-bottom: -20px;
+    margin-left: -47px;
+    /*position: relative;
+    left: -43px;
+    bottom: -25px; */
+}
+
+.text01 {
+    display: flex;
+    font-size: 20px;
+}
+
+.layoutright {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px;
+    /* border: 2px solid sienna; */
+    border-radius: 10px;
+    align-items: center;
+    width: 400;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 1px 1px 27px 2px rgba(0, 0, 0, 0.33);
+    -webkit-box-shadow: 1px 1px 27px 2px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: 1px 1px 27px 2px rgba(0, 0, 0, 0.33);
+}
+
+form {
+    align-items: center;
+    margin: 5px;
+    display: flex;
+    flex-flow: column;
+
+}
+
+input {
+    font-family: 'Mitr', sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    align-items: center;
+    padding: 10px;
+    width: 350px;
+    height: 45px;
+    /* font-size: 15px; */
+    margin: 5px 5px;
+    border-radius: 5px;
+    border: 0.5px solid silver;
+}
+
+
+.btn1 {
+    font-size: 25px;
+    padding: 2px;
+    width: 350px;
+    height: 45px;
+    margin: 5px 5px;
+    border-radius: 5px;
+    border: 100px;
+    background-color: blue;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.text02 {
+    margin: 10px;
+}
+
+.btn2 {
+    margin-top: 20px;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+    padding: 6px;
+    width: 150px;
+    height: 38px;
+    /* margin: 5px 5px; */
+    border-radius: 5px;
+    border: 100px;
+    background-color: rgb(18, 185, 0);
+    color: aliceblue;
+    cursor: pointer;
+    
+}
+
+.text03 {
+    position: relative;
+    bottom: -45px;
+}
+
+@media (max-width: 1500px) {
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .layoutleft {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 30px;
+        font-size: 15px;
+    }
+    .laypic {
+        position: relative;
+        right: -30px;
+        margin-bottom: -30px;
+
+    }
+
+}
+
+
+
+footer{
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 110px;
+    background: rgb(255, 255, 255);
+    margin-bottom: -500px;
+
+
+    
+}
